@@ -1,0 +1,59 @@
+/* =============================================
+   Smart Code Translator — Light Mode Monochrome
+   ============================================= */
+
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap');
+
+/* ---- CSS Variables (High-Contrast Light Mode) ---- */
+:root {
+  --bg-base:       #ffffff;
+  --bg-surface:    #f9f9f9;
+  --bg-elevated:   #f0f0f0;
+  --bg-overlay:    #e5e5e5;
+
+  --border:        #e0e0e0;
+  --border-bright: #cccccc;
+
+  --text-primary:  #000000;
+  --text-secondary:#444444;
+  --text-muted:    #888888;
+
+  --accent:        #000000;
+  --accent-dark:   #333333;
+  --accent-glow:   rgba(0, 0, 0, 0.05);
+
+  --radius-sm:     4px;
+  --radius-md:     8px;
+  --radius-lg:     12px;
+
+  --navbar-h:      64px;
+  --transition:    0.2s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+/* ---- Reset ---- */
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+html, body, #root { height: 100%; }
+body {
+  font-family: 'Outfit', sans-serif;
+  background: var(--bg-base);
+  color: var(--text-primary);
+  font-size: 15px;
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+}
+button { cursor: pointer; font-family: inherit; }
+select { font-family: inherit; }
+
+/* ---- App Shell ---- */
+.app-shell {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  overflow: hidden;
+}
+
+/* ---- Global Scrollbar ---- */
+::-webkit-scrollbar { width: 4px; height: 4px; }
+::-webkit-scrollbar-track { background: var(--bg-base); }
+::-webkit-scrollbar-thumb { background: var(--border-bright); }
+::-webkit-scrollbar-thumb:hover { background: var(--text-muted); }

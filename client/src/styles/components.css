@@ -1,0 +1,66 @@
+/* ===============================================
+   COMPONENTS (Monochrome)
+   =============================================== */
+
+/* Complexity Cards */
+.complexity-cards {
+  display: flex;
+  gap: 16px;
+}
+.complexity-cards.small .complexity-card { padding: 14px 20px; }
+.complexity-card {
+  flex: 1;
+  padding: 18px 24px;
+  border-radius: var(--radius-md);
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  background: var(--bg-surface);
+  border: 1px solid var(--border-bright);
+  box-shadow: 0 4px 12px rgba(0,0,0,0.4);
+}
+.complexity-card.time { border-left: 4px solid var(--text-primary); }
+.complexity-card.space { border-left: 4px solid var(--text-muted); }
+
+.complexity-label {
+  font-size: 11px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  color: var(--text-muted);
+}
+.complexity-value {
+  font-size: 24px;
+  font-weight: 700;
+  font-family: 'JetBrains Mono', monospace;
+  color: var(--text-primary);
+}
+
+/* Spinners */
+.spinner {
+  width: 32px;
+  height: 32px;
+  border: 4px solid var(--border);
+  border-top-color: var(--text-primary);
+  border-radius: 50%;
+  animation: spin 0.8s linear infinite;
+}
+.spinner-inline {
+  width: 16px;
+  height: 16px;
+  border: 2px solid rgba(255,255,255,0.2);
+  border-top-color: var(--text-primary);
+  border-radius: 50%;
+  animation: spin 0.8s linear infinite;
+  display: inline-block;
+}
+@keyframes spin { to { transform: rotate(360deg); } }
+
+/* Protected Route Loading */
+.protected-loading {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background: var(--bg-base);
+}
