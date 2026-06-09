@@ -13,8 +13,8 @@ const Navbar = () => {
   return (
     <nav className="navbar">
       <NavLink to="/" className="navbar-brand">
-        <span className="brand-icon">⚡</span>
-        <span className="brand-name">Smart Code Translator</span>
+        <span className="brand-icon">&lt;/&gt;</span>
+        <span className="brand-name">CodeFlux</span>
       </NavLink>
 
       <div className="navbar-links">

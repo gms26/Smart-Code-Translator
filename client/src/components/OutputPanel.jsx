@@ -4,7 +4,7 @@ const OutputPanel = ({ result, action, targetLanguage }) => {
   if (!result) {
     return (
       <div className="output-empty">
-        <div className="output-empty-icon">⚡</div>
+        <div className="output-empty-icon">&lt;/&gt;</div>
         <p className="output-empty-title">Ready to Run</p>
         <p className="output-empty-subtitle">
           Write code, pick an action, and hit <strong>Run</strong>

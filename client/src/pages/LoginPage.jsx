@@ -63,8 +63,8 @@ const LoginPage = () => {
     <div className="login-page">
       <div className="login-card">
         <div className="login-header">
-          <span className="login-logo">⚡</span>
-          <h1 className="login-title">Smart Code Translator</h1>
+          <span className="login-logo">&lt;/&gt;</span>
+          <h1 className="login-title">CodeFlux</h1>
           <p className="login-subtitle">
             {isSignUp ? 'Create your account' : 'Sign in to your account'}
           </p>
