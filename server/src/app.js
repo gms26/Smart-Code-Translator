@@ -12,6 +12,10 @@ app.use(cors({
 
 app.use(express.json());
 
+app.get('/', (req, res) => {
+  res.json({ success: true, message: 'Smart Code Translator API is running' });
+});
+
 app.use('/api', routes);
 
 app.use(notFoundHandler);
